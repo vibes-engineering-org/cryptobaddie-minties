@@ -26,7 +26,7 @@ export default async function Image() {
           overflow: "hidden",
         }}
       >
-        {/* Background gradient with Farcaster purple and electric blue */}
+        {/* Background gradient with mint green and purple for NFT theme */}
         <div
           style={{
             position: "absolute",
@@ -34,7 +34,7 @@ export default async function Image() {
             left: 0,
             right: 0,
             bottom: 0,
-            background: "linear-gradient(135deg, #8A63D2 0%, #1E90FF 100%)",
+            background: "linear-gradient(135deg, #10B981 0%, #8B5CF6 50%, #EC4899 100%)",
             opacity: 0.9,
           }}
         />
@@ -48,7 +48,7 @@ export default async function Image() {
             right: 0,
             bottom: 0,
             backgroundImage:
-              "radial-gradient(circle at 20% 80%, rgba(138, 99, 210, 0.4) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(30, 144, 255, 0.4) 0%, transparent 50%)",
+              "radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.4) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.4) 0%, transparent 50%)",
           }}
         />
 
@@ -153,6 +153,86 @@ export default async function Image() {
           >
             {PROJECT_DESCRIPTION}
           </p>
+
+          {/* NFT Collection badges */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "24px",
+              marginBottom: "32px",
+            }}
+          >
+            {/* Mint badge */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "12px",
+                padding: "16px 32px",
+                backgroundColor: "rgba(16, 185, 129, 0.3)",
+                borderRadius: "50px",
+                border: "2px solid rgba(16, 185, 129, 0.6)",
+                backdropFilter: "blur(10px)",
+                boxShadow: "0 6px 24px rgba(16, 185, 129, 0.3)",
+              }}
+            >
+              <div
+                style={{
+                  width: "24px",
+                  height: "24px",
+                  borderRadius: "6px",
+                  background: "linear-gradient(45deg, #10B981, #34D399)",
+                  border: "2px solid rgba(255, 255, 255, 0.8)",
+                }}
+              />
+              <span
+                style={{
+                  fontSize: "24px",
+                  fontWeight: "700",
+                  color: "#ffffff",
+                  fontFamily: "system-ui, -apple-system, sans-serif",
+                }}
+              >
+                MINT
+              </span>
+            </div>
+
+            {/* NFT badge */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "12px",
+                padding: "16px 32px",
+                backgroundColor: "rgba(139, 92, 246, 0.3)",
+                borderRadius: "50px",
+                border: "2px solid rgba(139, 92, 246, 0.6)",
+                backdropFilter: "blur(10px)",
+                boxShadow: "0 6px 24px rgba(139, 92, 246, 0.3)",
+              }}
+            >
+              <div
+                style={{
+                  width: "24px",
+                  height: "24px",
+                  borderRadius: "6px",
+                  background: "linear-gradient(45deg, #8B5CF6, #A78BFA)",
+                  border: "2px solid rgba(255, 255, 255, 0.8)",
+                }}
+              />
+              <span
+                style={{
+                  fontSize: "24px",
+                  fontWeight: "700",
+                  color: "#ffffff",
+                  fontFamily: "system-ui, -apple-system, sans-serif",
+                }}
+              >
+                NFT
+              </span>
+            </div>
+          </div>
 
           {/* Farcaster branding element */}
           <div
